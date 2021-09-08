@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2019/11/27/14/06/pokemon-4657023_960_720.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Pokédex</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar text-light">
+            <div class="d-flex justify-content-between w-100 mx-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" style="height:60px;width: auto;" alt="">
+                <img class="selectable" src="https://cdn.pixabay.com/photo/2019/11/27/14/06/pokemon-4657023_960_720.png" style="height:50px;width:auto;" alt="Pokeball">
+            </div>
+            <div class="d-flex justify-content-center w-100">
+                <input class="form-control mb-1 w-50" type="search" placeholder="Search.." name="search" id="search">
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <div class="modal fade" id="focusedPokemon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark text-light" id="focused-pokemon">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list-group" id="poke-library"></ul>
+                    <!-- PokeAPI data goes here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-light">
+        <div class="text-center no-select">
+            <p><small>Made with 💖 by Codeworks</small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>

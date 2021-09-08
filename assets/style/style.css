@@ -1,0 +1,16 @@
+/* BASIC STYLES HERE */
+
+.navbar {
+    font-family: 'Architects Daughter', cursive;
+    height: 15vh;
+    border-radius: 0 0 10% 10%;
+    background-color: darkred;
+}
+
+.poke-item {
+    border-radius: 10px;
+}
+
+.pokemon-sprite {
+    background-color: ivory;
+}
